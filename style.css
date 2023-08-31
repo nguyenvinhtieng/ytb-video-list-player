@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+
+}
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+}
+.inner {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item {
+    padding: 12px 20px;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+    list-style: none;
+    padding-right: 40px;
+    position: relative;
+}
+.delete {
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translate(0, -50%);
+    padding: 6px;
+    background-color: rgb(203, 24, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.item:hover {
+    background-color: #c9c9c9;
+}
+.item.active {
+    background-color: #4677ff !important;
+    color: #fff !important;
+}
+.tool_bar {
+    position: fixed;
+    height: 60px;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+button {
+    border: 0;
+    outline: none;
+    padding: 16px 20px;
+    font-size: 20px;
+}
+.none {
+    display: none;
+    visibility: hidden;
+}
